@@ -28,7 +28,7 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 
 :heavy_check_mark:   Faça o upload do dataset no SageMaker Canvas.
 
-**  :heavy_exclamation_mark:  O dataset escolhido para a tarefa foi o "dataset-1000-com-preco-promocional-e-renovacao-estoque.csv".**
+**:heavy_exclamation_mark:  O dataset escolhido para a tarefa foi o "dataset-1000-com-preco-promocional-e-renovacao-estoque.csv".**
 
 ### 2. Construir/Treinar
 
@@ -38,7 +38,7 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 
 :heavy_check_mark:   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
-**    :heavy_exclamation_mark: A variável escolhida para ser prevista foi a QUANTIDADE_ESTOQUE e a variável temporal foi a "DATA_EVENTO", com previsão para 1 dia.**
+**:heavy_exclamation_mark: A variável escolhida para ser prevista foi a QUANTIDADE_ESTOQUE e a variável temporal foi a "DATA_EVENTO", com previsão para 1 dia.**
 
 ### 3. Analisar
 
@@ -48,7 +48,7 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 
 :heavy_check_mark:   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
 
-**    :heavy_exclamation_mark: Após o treinamento, observou-se que as variáveis "PRECO" e "FLAG_PROMOCAO", que representam, respectivamente, o preço dos produtos e se houveram promoções, tem uma correlação variável com a "QUANTIDADE_ESTOQUE"; tendo um impacto de apenas 9,61% para a primeira variável e 0% para a segunda. Sendo assim, é possível concluir que "PRECO" tem pouca influencia em "QUANTIDADE_ESTOQUE", enquanto que "FLAG PROMOCAO" não influencia em nada**
+**:heavy_exclamation_mark: Após o treinamento, observou-se que as variáveis "PRECO" e "FLAG_PROMOCAO", que representam, respectivamente, o preço dos produtos e se houveram promoções, tem uma correlação variável com a "QUANTIDADE_ESTOQUE"; tendo um impacto de apenas 9,61% para a primeira variável e 0% para a segunda. Sendo assim, é possível concluir que "PRECO" tem pouca influencia em "QUANTIDADE_ESTOQUE", enquanto que "FLAG PROMOCAO" não influencia em nada**
 
 ### 4. Prever
 
@@ -58,13 +58,13 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 
 :heavy_check_mark:   Documente suas conclusões e qualquer insight obtido a partir das previsões.
 
-**    :heavy_exclamation_mark: Com o treinamento, foram geradas previsões para todos os produtos. Mas por limitação do escopo de entrega, foi escolhido o produto 1000 onde foi gerado o arquivo "single_prediction_results.csv", upado nesse fork e ilustrado na imagem abaixo.**
+**:heavy_exclamation_mark: Com o treinamento, foram geradas previsões para todos os produtos. Mas por limitação do escopo de entrega, foi escolhido o produto 1000 onde foi gerado o arquivo "single_prediction_results.csv", upado nesse fork e ilustrado na imagem abaixo.**
 
 ![Imagem](single_prediction_results.png)
 
-**   :heavy_exclamation_mark: Como podemos ver, para as 3 previsões, (padrão otimista e pessimista), foi previsto uma diminuição do estoque do produto, talves sendo necessária uma reposição**
+**:heavy_exclamation_mark: Como podemos ver, para as 3 previsões, (padrão otimista e pessimista), foi previsto uma diminuição do estoque do produto, talves sendo necessária uma reposição**
 
-**  :heavy_exclamation_mark: As métricas encontradas do modelo foram:**
+**:heavy_exclamation_mark: As métricas encontradas do modelo foram:**
 
     ## Avg. wQL: 0.060
     
